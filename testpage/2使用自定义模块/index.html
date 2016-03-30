@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>requirejs入门（二）</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            .wrapper {
+                width: 200px;
+                height: 200px;
+                background: gray;
+            }
+        </style>
+    </head>
+    <body>
+    	<h1>打开控制台查看运行结果</h1>
+        <div class="wrapper"></div>
+        <!-- 这次把script标签放到了div的后面，因为要用选择器去获取页面dom元素，而这要等到dom ready后。
+		因为把main.js放到js目录中，这里data-main的值须改为“js/main” -->
+        <script data-main="js/main" src="http://cdn.bootcss.com/require.js/2.1.22/require.js"></script>
+    </body>
+</html>
